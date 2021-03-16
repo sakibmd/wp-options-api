@@ -32,7 +32,7 @@ add_action( 'wp_ajax_options_display_result', function () {
         if ( 'add-option' == $task ) {
             $key = 'od-country';
             $value = 'Bangladesh';
-            echo "Result = " . add_option( $key, $value ) . '<br/>';
+            echo "Result = " . update_option($key, $value ) . '<br/>';
 
             $key = 'od-country';
             $value = 'bangladesh';
@@ -122,7 +122,8 @@ return json_decode( $value, true );
 } ); */
 
 add_action( 'admin_menu', function () {
-    add_menu_page( 'Options Demo', 'Options Demo', 'manage_options', 'options-demo', 'optionsdemo_admin_page' );
+    $title = __('Options Demo', 'option-demo');
+    add_menu_page( $title, $title, 'manage_options', 'options-demo', 'optionsdemo_admin_page' );
 } );
 
 function optionsdemo_admin_page() {

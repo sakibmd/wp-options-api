@@ -1,29 +1,30 @@
-.plugin-side-options{
-    background-color:#fff;
-    min-height:600px;
-    margin-right:5px;
-    padding:10px;
-}
-.plugin-demo-content{
-    background-color:#fff;
-    min-height:600px;
-    margin:0px 10px ;
-    padding:10px 20px;
+.plugin-side-options {
+    background-color: #fff;
+    min-height: 600px;
+    margin-right: 5px;
+    padding: 10px;
 }
 
-.plugin-side-options button{
-    width:100%;
-    padding:10px;
+.plugin-demo-content {
+    background-color: rgb(228, 228, 228);
+    min-height: 600px;
+    margin: 0px 15px;
+    padding: 10px 20px;
+}
+
+.plugin-side-options button {
+    width: 100%;
+    padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.plugin-result{
-    padding:10px 20px;
+.plugin-result {
+    padding: 10px 20px;
     background-color: #ddd;
     display: none;
 }
 
-.plugin-result-title{
+.plugin-result-title {
     margin-bottom: 15px;
 }
